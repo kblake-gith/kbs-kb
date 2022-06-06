@@ -11,7 +11,7 @@ Forked from [gnebbia/kb](https://github.com/gnebbia/kb)
 Cheatsheets are helpful, but only when everyone on a team is using the
 same cheatsheet, and that content is maintained and kept accurate.
 
-That's what this tool does:
+That's what this tool does!
 
 
 - collects cheatsheets with standardized info and processes in an
@@ -19,26 +19,73 @@ That's what this tool does:
 - makes the knowledge base easy to share
 - keeps the knowledge base up-to-date 
 
+--- 
 ## Installation
 
-**You should have Python 3.6 or above installed.**
+### Make sure you're running a current version of Python
 
 ```sh
 python --version
 ```
 
-If you have Python 3.6 or higher installed, just type:
+If you don't have **Python 3.6** or above installed, ask for help.
+
+
+### Step 1: Clone this repo and checkout the last stable release
+
+1. In the local directory you use to store repos:
+
+`git clone https://github.com/ryandeussing/kb.git`
+
+2. Checkout the last stable release:
+
+`git checkout v0.1.6`
+
+### Step 2: Install the `kb` app dependencies
+
+*cd into the the `kb` directory you just cloned* and then run the command for your operating system
+
+A. On MacOS:
+
 ```sh
- pip install -U git+https://github.com/ryandeussing/kb.git@40d361d420baab260e6a57a21f4908f1a8a283ee
+ pip3 install -r requirements.txt
 ```
 
-If that worked, you've installed kb - but your knowledge base is empty.
+B. On RHEL CSB:
 
-### Import the Insights Docs knowledge base
+```sh
+ sudo pip3 install -r requirements.txt
+```
 
-To import the Insights Docs knowledge base:
+### Step 3: Install the `kb` app
 
-1. download the most recent knowledge base archive
+Run the command for your operating system
+
+A. On MacOS:
+
+```sh
+ python setup.py install
+```
+
+B. On RHEL CSB:
+
+```sh
+ sudo python setup.py install
+```
+
+### Step 4: Make sure your PATH is setup 
+
+Quit and restart your terminal.
+
+Then run the command `kb -h`
+
+If that doesn't print out a list of commands, ask for help. 
+
+
+
+### Step 5: Import the Insights Docs knowledge base
+
+1. download the [latest knowledge base archive](https://github.com/ryandeussing/kbsync/blob/main/latest.kb.tar.gz)
 
 2. import the archive with this command:
 
@@ -46,10 +93,9 @@ To import the Insights Docs knowledge base:
 kb import {path-to-file-that-ends-in-tar.gz}
 ```
 
+### Usage
 
-## Usage
-
-
+TK
 
 ---
 #### COPYRIGHT
