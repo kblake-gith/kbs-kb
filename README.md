@@ -1,23 +1,11 @@
-<p align="center">
-    <img src="img/kb_logo.png?raw=true" width="200"/>
-</p>
-
 # kb. A minimalist knowledge base manager
 
 Forked from [gnebbia/kb](https://github.com/gnebbia/kb)
 
 ## Purpose
 
-Cheatsheets are helpful, but only when everyone on a team is using the
-same cheatsheet, and that content is maintained and kept accurate.
-
-That's what this tool does!
-
-
-- collects cheatsheets with standardized info and processes in an
-  organized knowledge base
-- makes the knowledge base easy to share
-- keeps the knowledge base up-to-date 
+Cheatsheets are helpful, especially everyone on a team is using the
+same cheatsheets.
 
 --- 
 ## Installation
