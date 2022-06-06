@@ -83,7 +83,12 @@ kb import {path-to-file-that-ends-in-tar.gz}
 
 ### Usage
 
-TK
+`kb list` will list the cheatsheets in the knowlege base
+
+`kb view 0` will print out the contents of the cheatsheet in position 0
+
+Note, it may be useful to us `kb` in a separate terminal tab so cheatsheet
+content doesn't interrupt your terminal workflow.
 
 ---
 #### COPYRIGHT
