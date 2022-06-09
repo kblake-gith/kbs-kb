@@ -71,15 +71,13 @@ If that doesn't print out a list of commands, ask for help.
 
 
 
-### Step 5: Import the Insights Docs knowledge base
+### Step 5: Sync the Insights Docs knowledge base
 
-1. download the [latest knowledge base archive](https://github.com/ryandeussing/kbsync/blob/main/latest.kb.tar.gz)
+1. run `kb sync init` and enter `git@github.com:ryandeussing/kbsync.git` as the repo url
 
-2. import the archive with this command:
+2. run `kb sync pull` to sync the knowledge base
 
-```sh
-kb import {path-to-file-that-ends-in-tar.gz}
-```
+Watch [the kbsync repo](https://github.com/ryandeussing/kbsync) so you will know when new changes have been merged, then just run `kb sync pull` to grab them.
 
 ### Usage
 
