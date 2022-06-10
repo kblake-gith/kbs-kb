@@ -78,7 +78,7 @@ kb -h
 If that doesn't print out a list of commands, ask for help. 
 
 
-### Step 5: Setup sync 
+### Step 5: Setup and test sync 
 
 1. Remove any `~/.kb` directory that may exist
 
@@ -97,6 +97,17 @@ git clone https://github.com/ryandeussing/kbsync.git ~/.kb
 ```sh
 kb list
 ```
+
+If you don't see a list of cheatsheets, ask for help.
+
+4. Sync changes
+
+```sh
+kb sync pull
+```
+
+If you don't see `Repository correctly synchronized from remote!`, ask for help.
+
 
 ### Usage
 
