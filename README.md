@@ -23,11 +23,15 @@ If you don't have **Python 3.6** or above installed, ask for help.
 
 1. In the local directory you use to store repos:
 
-`git clone https://github.com/ryandeussing/kb.git`
+```sh
+git clone https://github.com/ryandeussing/kb.git
+```
 
 2. Checkout the last stable release:
 
-`git checkout v0.1.6`
+```sh
+git checkout v0.1.6
+```
 
 ### Step 2: Install the `kb` app dependencies
 
@@ -36,13 +40,13 @@ If you don't have **Python 3.6** or above installed, ask for help.
 A. On MacOS:
 
 ```sh
- pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 B. On RHEL CSB:
 
 ```sh
- sudo pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 ```
 
 ### Step 3: Install the `kb` app
@@ -52,32 +56,47 @@ Run the command for your operating system
 A. On MacOS:
 
 ```sh
- python setup.py install
+python setup.py install
 ```
 
 B. On RHEL CSB:
 
 ```sh
- sudo python setup.py install
+sudo python setup.py install
 ```
 
 ### Step 4: Make sure your PATH is setup 
 
 Quit and restart your terminal.
 
-Then run the command `kb -h`
+Then run the command
+
+```sh
+kb -h
+```
 
 If that doesn't print out a list of commands, ask for help. 
 
 
+### Step 5: Setup sync 
 
-### Step 5: Sync the Insights Docs knowledge base
+1. Remove any `~/.kb` directory that may exist
 
-1. run `kb sync init` and enter `git@github.com:ryandeussing/kbsync.git` as the repo url
+```
+rm -rf ~/.kb
+```
 
-2. run `kb sync pull` to sync the knowledge base
+2. Clone our shared cheatsheets into a `~/.kb` directory
 
-Watch [the kbsync repo](https://github.com/ryandeussing/kbsync) so you will know when new changes have been merged, then just run `kb sync pull` to grab them.
+```sh
+git clone https://github.com/ryandeussing/kbsync.git ~/.kb
+```
+
+3. Open a new terminal window and run
+
+```sh
+kb list
+```
 
 ### Usage
 
