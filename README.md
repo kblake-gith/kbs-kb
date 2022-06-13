@@ -89,7 +89,7 @@ rm -rf ~/.kb
 2. Clone our shared cheatsheets into a `~/.kb` directory
 
 ```sh
-git clone https://github.com/ryandeussing/kbsync.git ~/.kb
+git clone git@github.com:ryandeussing/kbsync.git ~/.kb
 ```
 
 3. Open a new terminal window and run
