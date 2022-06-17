@@ -24,7 +24,7 @@ If you don't have **Python 3.6** or above installed, ask for help.
 1. In the local directory you use to store repos:
 
 ```sh
-git clone git@github.com:ryandeussing/kbsync.git
+git clone git@github.com:ryandeussing/kb.git
 ```
 
 2. Checkout the last stable release:
