@@ -7,6 +7,11 @@ Forked from [gnebbia/kb](https://github.com/gnebbia/kb)
 Cheatsheets are helpful, especially everyone on a team is using the
 same cheatsheets.
 
+Follow the instructions below to install:
+
+1. kb (a command-line app for cheatsheets)
+2. our shared collection of cheetsheets
+
 --- 
 ## Installation
 
