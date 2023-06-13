@@ -37,6 +37,7 @@ git clone git@github.com:ryandeussing/kb.git
 ```sh
 git checkout v0.1.6
 ```
+☝️ important: only that version supports git sync
 
 ### Step 2: Install the `kb` app dependencies
 
